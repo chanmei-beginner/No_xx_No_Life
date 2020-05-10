@@ -1,0 +1,56 @@
+body,
+.editor-post-title__input {
+	font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'Arial',sans-serif;
+}
+
+
+p {
+	line-height: 1.8;
+	font-size: 1em;
+
+}
+
+h1::before {
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	content: "\f6be";
+	color: #cfa684;
+	margin-right: 5px;
+}
+
+h2 {
+	border-left: solid 10px rgb(255, 170, 0);
+	padding-left: 14px;
+	font-size: 1.25em;
+}
+
+h4 {
+	position: relative;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+}
+
+h4:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 75%;
+	height: 7px;
+	background: -webkit-repeating-linear-gradient(-45deg, #b0c68b, #b0c68b 2px, #fff 2px, #fff 4px);
+	background: repeating-linear-gradient(-45deg, #b0c68b, #b0c68b 2px, #fff 2px, #fff 4px);
+}
+
+
+
+.wp-block {
+	max-width: calc(720px + 30px);
+}
+
+.wp-block:not([data-align="full"]):not([data-align="wide"]) {
+	max-width: calc(720px + 30px);/*横幅の最大値は記事エリア（720px）＋左右の余白（30px）を足した値*/
+}
+/*横幅（幅広）*/
+.wp-block[data-align="wide"] {
+	max-width: calc(1020px + 30px);
+}

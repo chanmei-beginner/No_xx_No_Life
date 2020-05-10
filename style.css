@@ -1,0 +1,1034 @@
+/*テーマに関する情報*/
+/*
+Theme Name: foods garden
+Author: chanmei
+Description: オリジナルテーマ
+Version: 1.0
+ */
+
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'Arial', sans-serif;
+	color: #424242;
+	height: 100%;
+
+
+}
+
+.wrapper {
+	margin: 0 auto;
+
+}
+
+/*header*/
+header {
+	position: relative;
+	height: 30vh;
+	background: url(images/IMG_1577.jpg) center / cover;
+	object-fit: cover;
+	text-shadow: 1px 2px 3px #424242;
+	color: aliceblue;
+
+}
+
+header li a {
+	color: aliceblue;
+	font-family: 'Indie Flower';
+	text-decoration: none;
+}
+
+.header-space {
+	padding: 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+
+
+}
+
+.logo {
+	list-style-type: none;
+	font-size: 130%;
+	padding-left: 10px;
+	font-family: 'Indie Flower';
+
+
+}
+
+.logo:hover {
+	opacity: 0.5;
+}
+
+.header-message {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	
+}
+.header-message .logo {
+	font-size: 1.8em;
+	margin-bottom: 0;
+}
+
+.header-message .follow-me {
+	margin-top: 0;
+}
+
+/*headerここまで*/
+
+
+/*メインコンテンツ*/
+.container {
+	margin: 50px 10px;
+
+}
+
+.search_container {
+	box-sizing: border-box;
+	position: relative;
+	border: 1px solid #999;
+	padding: 3px 10px;
+	border-radius: 20px;
+	height: 2.3em;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.search_container input[type="text"] {
+	border: none;
+	height: 2.0em;
+}
+
+.search_container input[type="text"]:focus {
+	outline: 0;
+}
+
+.search_container input[type="submit"] {
+	cursor: pointer;
+	font-family: FontAwesome;
+	font-size: 1.3em;
+	border: none;
+	background: none;
+	color: rgb(96, 96, 96);
+	position: absolute;
+	width: 2.5em;
+	height: 2.5em;
+	right: 0;
+	top: -7px;
+	outline: none;
+}
+
+
+.fa-angle-double-up {
+	color: white;
+	font-size: 200%;
+
+}
+
+#page_top {
+	position: fixed;
+	bottom: 10px;
+	right: 2%;
+	text-decoration: none;
+	list-style-type: none;
+	border: solid 1px #d3d3d3;
+	border-radius: 50px;
+	background-color: #d3d3d3;
+	padding: 11px 20px 11px 20px;
+	z-index: 99;
+
+}
+
+#page_top:hover {
+	background-color: rgb(96, 96, 96);
+	border: solid 1px rgb(96, 96, 96);
+}
+
+/*メインコンテンツここまで*/
+
+
+/*footer*/
+footer {
+	height: 22vh;
+	color: aliceblue;
+	/* 	opacity: 0.6; */
+	border-top: solid 8px #5d627b;
+	background-color: #556b2f;
+	/*	object-fit: cover;*/
+	position: relative;
+	bottom: 0;
+
+}
+
+footer li a {
+
+	font-family: 'Indie Flower';
+	text-decoration: none;
+
+}
+
+.footer-space {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*	flex-wrap: wrap;*/
+	padding-right: 10%;
+
+}
+
+.author {
+	position: absolute;
+	bottom: 2px;
+	left: 2em;
+	margin: 0;
+}
+
+.author p {
+	font-size: 0.7em;
+
+}
+
+
+
+.list {
+	font-size: 0.9em;
+
+}
+
+.list ul {
+	list-style-type: none;
+}
+
+
+.follow-me {
+	display: flex;
+	list-style-type: none;
+
+
+}
+
+.follow-me p {
+	font-family: 'Indie Flower';
+
+}
+
+.follow-me li {
+	padding: 10px;
+	margin-top: 15px;
+
+}
+
+.fa-twitter,
+.fa-instagram {
+	font-size: 180%;
+}
+
+.fa-twitter:hover {
+	opacity: 0.5;
+}
+
+.fa-instagram:hover {
+	opacity: 0.5;
+}
+
+/*footerここまで*/
+
+/* wordpressのスタイル */
+.alignleft {
+	float: left;
+	margin-left: 0;
+	margin-right: 1em;
+}
+
+/*右寄せ*/
+.alignright {
+	float: right;
+	margin-left: 1em;
+	margin-right: 0;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*中央揃えの配置を機能させる*/
+.wp-block-categories.aligncenter,
+.wp-block-latest-posts.aligncenter,
+.wp-block-archives.aligncenter,
+.wp-block-tag-cloud.aligncenter,
+.wp-block-latest-comments.aligncenter,
+.wp-block-rss.aligncenter .wp-block-embed-instagram.aligncenter .wp-block-embed__wrapper {
+	text-align: center;
+}
+
+.wp-block-embed__wrapper,
+.wp-block-embed-instagram,
+.iframe {
+	min-width: 300px;
+	
+}
+
+
+/*ブロックの余白を削除する*/
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body {
+	box-sizing: border-box;
+	/*パディングとボーダーを幅と高さに含める*/
+
+}
+
+body *,
+/*bodyの全ての要素*/
+body *::before,
+body *::after {
+	box-sizing: inherit;
+	/*親要素の値を継承する*/
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1em;
+
+}
+
+.myposthead h1 {
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to right, #556b2f 0%, #FFF 100%);
+	border-image-slice: 1;
+	padding-bottom: 1px;
+	text-align: left;
+	font-size: 110%;
+}
+
+
+/*投稿レイアウト*/
+h2 {
+	border-left: solid 10px rgb(255, 170, 0);
+	padding-left: 14px;
+	font-size: 1.25em;
+}
+
+
+
+h4 {
+	position: relative;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+}
+
+h4:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 75%;
+	height: 7px;
+	background: -webkit-repeating-linear-gradient(-45deg, #b0c68b, #b0c68b 2px, #fff 2px, #fff 4px);
+	background: repeating-linear-gradient(-45deg, #b0c68b, #b0c68b 2px, #fff 2px, #fff 4px);
+}
+
+
+/*記事全体（小さい画面には横幅を指定しないための処理）*/
+.mycontainer {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*タイトルと投稿日・記事一覧*/
+.myposthead {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
+.myposthead p {
+	font-family: 'Indie Flower';
+	font-weight: bold;
+	/*太字*/
+	text-align: left;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	/*下線をなくす*/
+}
+
+a:hover {
+	opacity: 0.7;
+	/*マウスオーバーした時に、リンクの色合いを薄くする*/
+}
+
+.post-categories {
+	display: flex;
+	justify-content: flex-start;
+	padding: 0;
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+/*記事が属するカテゴリーの最後の要素以外*/
+.post-categories li:not(:last-child) {
+	margin-right: 10px;
+	/*外側の余白*/
+}
+
+.post-categories a {
+	padding: 3px 10px;
+	border: solid 1px rgb(96, 96, 96);
+	border-radius: 10px;
+	color: rgb(96, 96, 96);
+	font-size: 0.8em;
+}
+
+
+/*パンくずリスト*/
+.breadcrumbs {
+	margin-bottom: 20px;
+	font-size: 0.8em;
+}
+
+.breadcrumbs::before {
+	font-family: "dashicons";
+	content: "\f102";
+}
+
+
+/*スクリーンリーダー用のテキストを隠す*/
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+	/*	※WordPressのサイトからコピー可能*/
+}
+
+/*前後の記事へのリンク*/
+.nav-links {
+	display: flex;
+	/*横並び*/
+	margin: 30px 0;
+	/*上の外側の余白*/
+	font-size: 0.8em;
+}
+
+/*前の記事へのリンク*/
+.nav-previous {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	font-size: 1.3em;
+
+}
+
+/*次の記事へのリンク*/
+.nav-next {
+	flex: 1;
+	margin-left: 10px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 1.3em;
+}
+
+/*前の記事の頭にアイコンを指定*/
+.nav-previous::before {
+	content: "\f141";
+}
+
+/*次の記事の後ろにアイコンを指定*/
+.nav-next::after {
+	content: "\f139";
+}
+
+.nav-previous::before,
+.nav-next::after {
+	font-family: "dashicons";
+	color: rgb(96, 96, 96);
+	font-size: 1.95em;
+	line-height: 1;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.mypostlist {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*記事の大きさ*/
+.mypostlist article {
+	width: 48%;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px 3px #dcdcdc;
+}
+
+/*記事一覧に表示されるアイキャッチ画像*/
+.mypostlist figure {
+	margin: 0;
+}
+
+.mypostlist h2,
+.mypostlist h3 {
+	margin: 0;
+	padding: 2px;
+	border: none;
+	font-size: 0.9em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.mypostlist img {
+	height: 180px;
+	object-fit: cover;
+}
+
+.mypostlist p {
+	font-size: 0.7em;
+	padding: 2px;
+}
+
+
+
+.mypostlist article:hover {
+	opacity: 0.6;
+}
+
+
+
+.result {
+	margin-bottom: 20px;
+}
+
+/*ページネーション全体.pagination ページネーションのリンク.nav-links*/
+.pagination .nav-links {
+	margin-bottom: 50px;
+	justify-content: center;
+	font-size: 1.3em;
+
+}
+
+/*ページネーション最後のページだけ余白を入れない リンクの間隔（.page-numbers）*/
+.pagination .page-numbers:not(:last-child) {
+	margin-right: 15px;
+}
+
+/*リンクの色*/
+.pagination a {
+	color: rgb(96, 96, 96);
+}
+
+/*表示中のページの色（.current）*/
+.pagination .current {
+	color: #aaaaaa;
+}
+
+.pagination .page-numbers span {
+	font-size: 1.5em;
+}
+
+
+
+/*全幅の適用*/
+.alignfull {
+	margin-left: -10px;
+	margin-right: -10px;
+	max-width: none;
+	width: auto;
+}
+
+/*プロフィール画像の位置*/
+.myprofile figure {
+	text-align: center;
+	padding-top: 20px;
+}
+
+/*プロフィール画像*/
+.myprofile img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+/*プロフィール名*/
+.myprofile strong {
+	display: block;
+	text-align: center;
+
+}
+
+/*プロフィール紹介文*/
+.my-description {
+	font-size: 0.9em;
+} 
+
+.display-name{
+	font-family: 'Indie Flower';
+	font-size: 1.5em;
+}
+
+/*ウィジェットエリアのリスト*/
+.widget ul {
+	padding: 0;
+	list-style-type: none;
+	font-weight:bolder;
+}
+
+/*ウィジェットエリアのリスト最後の要素以外の設定*/
+.widget li:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+/*ウィジェットエリアのドロップダウン*/
+.widget select {
+	width: 100%;
+	height: 40px;
+	border: solid 1px #aaaaaa;
+}
+
+.myprofile h1,
+.widget .widgettitle {
+	margin-top: 0;
+	margin-bottom: 20px;
+	padding: 1px;
+	border: none;
+	border-bottom: 3px solid;
+	border-image: linear-gradient(to right, #556b2f 0%, #FFF 100%);
+	border-image-slice: 1;
+	font-family: 'Indie Flower';
+	font-size: 150%;
+}
+
+
+.post-date {
+	font-size: 0.7em;
+
+}
+
+.post-date::before {
+	content: "\A";
+	white-space: pre;
+
+}
+
+.myprofile h1::before {
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	content: "\f6be";
+	color: #cfa684;
+	margin-right: 5px;
+}
+
+.widget .widgettitle::before {
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+	content: "\f6be";
+	color: #cfa684;
+	margin-right: 5px;
+}
+
+/*固定ページのメディアと文章ブロックの追加cssで作成したクラス*/
+/*上下の余白*/
+.mymargin {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/*お問い合わせページ*/
+/*コンタクトフォーム7*/
+.wpcf7-text,
+.wpcf7-textarea {
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #bbbbbb;
+}
+
+/*送信ボタン*/
+.wpcf7-submit {
+	width: 250px;
+	padding: 10px;
+	border: none;
+	background-color: #ffaa00;
+	-webkit-appearance: none;
+	/*iOSに設定が反映されるように(規定のスタイル）*/
+}
+
+.myprofile,
+.widget {
+	margin-bottom: 50px;
+}
+
+/*関連記事全体に罫線*/
+.myrelated {
+	border: solid 1px #556b2f;
+	padding: 1.5em 1em 0 1em;
+	position: relative;
+	margin: 3em 0;
+
+}
+
+.myrelated h2 {
+	border-left: none;
+	border-width: 5px;
+	color: rgb(96, 96, 96);
+	font-size: 1em;
+	position: absolute;
+	display: inline-block;
+	top: -20px;
+	left: 10px;
+	padding: 0 9px;
+	line-height: 1;
+	background: #FFF;
+	font-weight: bold;
+}
+
+.myrelated img {
+	height: 120px;
+}
+
+.myshare {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.myshare h2 {
+	padding: 0;
+	border: none;
+	color: rgb(96, 96, 96);
+	font-size: 1em;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.snspostlist {
+	display: flex;
+	justify-content: space-around;
+}
+
+.btn-social-circle {
+	display: inline-block;
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 23px;
+	border-radius: 50%;
+	text-align: center;
+	overflow: hidden;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+	transition: .3s;
+	margin-right: 5%;
+}
+
+.btn-social-circle i {
+	line-height: 50px;
+}
+
+.btn-social-circle:hover {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.28);
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+.btn-social-circle--twitter {
+	color: #22b8ff;
+	font-size: 100%;
+	background-image: linear-gradient(#aeecff 0%, #57c8ff 100%);
+}
+
+.btn-social-circle--facebook {
+	color: #6183f3;
+	background-image: linear-gradient(#b5d3ff 0%, #6b8bff 100%);
+}
+
+.btn-social-circle--hatebu {
+	color: #49a8fb;
+	background-image: linear-gradient(#d2efff 0%, #76befb 100%);
+}
+
+.btn-social-circle--pocket {
+	color: #ff6d82;
+	background-image: linear-gradient(#ffcfd7 0%, #ff7285 100%);
+}
+
+.btn-social-circle--line {
+	color: #FFFFFF;
+	font-size: 200%;
+	background-image: linear-gradient(#00B900 0%, #80e067 100%);
+}
+
+
+#comment,
+#author,
+#email,
+#url {
+	width: 100%;
+	padding: 10px;
+	border: solid 1px #bbbbbb;
+}
+
+/*送信ボタン*/
+#submit {
+	width: 40%;
+	padding: 10px;
+	border: none;
+	background-color: #ffaa00;
+	-webkit-appearance: none;
+	/*iOSに設定が反映されるように(規定のスタイル）*/
+	margin-bottom: 20px;
+}
+
+#reply-title {
+	margin-top: 20px;
+	font-size: 100%;
+}
+
+
+.reply {
+	display: none;
+}
+
+.comment-body {
+	margin: 10px;
+}
+
+#reply-title:before {
+	font-family: "dashicons";
+	content: "\f473";
+	color: red;
+	line-height: 1;
+}
+
+.datetime time {
+	display: flex;
+	align-items: center;
+
+}
+
+.posted-date:before {
+	font-family: "dashicons";
+	content: "\f508";
+}
+
+.posted-date,
+.update-date {
+	margin-right: 1em;
+}
+
+.update-date:before {
+	font-family: "dashicons";
+	content: "\f531";
+
+}
+
+.cat-item,
+.widget_archive li,
+.widget_recent_entries li {
+	border-image: linear-gradient(to right, #dcdcdc 0%, #FFF 100%);
+	border-image-slice: 1;
+	border-bottom: 1px solid;
+	line-height: 1.5;
+	height: 10%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #666;
+	
+}
+
+ul .children .cat-item::before {
+	content: "";
+	margin-left: 1.1em;
+	font-size: 1.1em;
+}
+
+ul .children .cat-item {
+	border: none;
+	line-height: 0.3;
+}
+
+.cat-item:hover,
+.widget_archive li:hover,
+.widget_recent_entries li:hover {
+	transform: translateY(0.1875em);
+	color: #556b2f;
+	
+}
+
+.cat-item:last-child {
+	border-bottom: none;
+}
+
+.widget_archive li:last-child {
+	border-bottom: none;
+}
+
+.widget_recent_entries li:last-child {
+	border-bottom: none;
+}
+
+.widget_tag_cloud .tagcloud a,
+.contents-tag {
+	background: #fff;
+	border: 1px solid #bbb;
+	color: #666;
+	padding: 6px;
+	margin-right: 3px;
+	border-radius: 1px;
+	text-decoration: none;
+	font-size:0.8em;
+	margin-bottom: 15px;
+
+}
+
+.contents-tag a {
+	line-height: 10px;
+	white-space: nowrap;
+	
+
+}
+
+
+
+.widget_tag_cloud a{
+	font-size:0.8em !important;/*文字サイズ変更*/
+	white-space: nowrap;
+	line-height: 40px;
+	
+	
+}
+
+.widget_tag_cloud a.tag-cloud-link {
+	margin-bottom: 15px;
+}
+
+/*タグクラウドマウスオーバー時*/
+.post-categories li a:hover,
+.widget_tag_cloud .tagcloud a:hover {
+	background: #556b2f;
+	color: #fff;
+	border: 1px solid #bbb;
+}
+
+
+
+
+.contents-tag:hover {
+	background: #556b2f;
+	color: #fff;
+	border: 1px solid #bbb;
+}
+
+.tag-list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+
+.contents-tag::before {
+	font-family: "dashicons";
+	content: "\f323";
+}
+
+
+
+
+/*リンクカード*/
+.lkc-external-wrap, .lkc-internal-wrap, .lkc-this-wrap {
+	background-image: none !important;
+	border-radius: 3px !important;
+	padding: 8px !important;
+}
+.lkc-card {
+	margin: 0 !important;
+}
+.lkc-domain {
+	font-weight: bold;
+	color: #4eacd1 !important;
+}
+.lkc-content {
+	margin-top: 6px !important;
+	word-break: break-all !important;
+	white-space: normal !important;
+	overflow: hidden !important;
+	position: relative !important;
+	min-height: 100px !important;
+	height: auto !important;
+	padding-right: 110px !important; 
+}
+.lkc-title {
+	line-height: 1.4em !important;
+}
+.lkc-excerpt {
+	line-height: 1.5em !important;
+}
+.lkc-thumbnail {
+	margin: 0 !important;
+}
+
+.lkc-thumbnail img {
+	border-radius: 0px !important;
+}
+
+.lkc-thumbnail img {
+	width:100px !important;
+	height:100px !important;
+	padding: 0 !important;
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+}
+
+@media screen and (max-width: 500px) {
+	.lkc-title {
+		font-size: 14px;!important;
+	}
+	.lkc-content {
+		padding-right: 90px !important; 
+	}
+	.lkc-thumbnail img {
+		width:80px !important;
+		height:80px !important;
+	}
+}
+
+/*目次*/
+#toc_container {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}

@@ -1,0 +1,171 @@
+@media (min-width: 740px) {
+	.header-space {
+		padding: 2px;
+		display: flex;
+		justify-content: space-around;
+		height: 80px;
+		color: aliceblue;
+		position: fixed;
+		width: 100%;
+	}
+
+
+	.logo {
+		list-style-type: none;
+		font-size: 2.5em;
+		color: aliceblue;
+
+
+	}
+
+
+
+	.list {
+		display: block;
+		right: 10px;
+		top: 10px;
+		align-items: center;
+		font-size: 1.1em;
+
+	}
+
+	.list ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin-right: 1em;
+	}
+
+
+	.list li {
+
+		margin-bottom: 5px;
+		text-align: left;
+	}
+
+	.list .li:hover {
+		opacity: 0.5;
+		border-bottom: 3px solid;
+		border-image: linear-gradient(to right, #ff3333 0%, #FFF 100%);
+		border-image-slice: 1;
+	}
+
+	.list li:not(:last-child) {
+		margin-right: 1em;
+	}
+
+
+	.hamburger-list {
+		display: none;
+	}
+
+	.container {
+		display: flex;
+		margin: 50px 100px;
+		justify-content: space-between;
+	}
+
+
+	.main {
+		width: 68%;
+		margin-top: 0;
+	}
+
+	.side {
+		width: 26%;
+		margin-top: 30px;
+
+	}
+
+	.iframe {
+		text-align: center;
+	}
+
+	.author {
+		position: absolute;
+		bottom: 15px;
+		left: 40%;
+	}
+
+	.author p {
+		font-size: 0.8em;
+	}
+
+}
+
+@media (min-width: 770px) {
+	.header-message {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.list {
+		display: none;
+	}
+
+
+	.mypostlist {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.mypostlist article {
+		width: 100%;
+		margin-bottom: 20px;
+		box-shadow: 3px 3px 3px #dcdcdc;
+	}
+	
+	.header-message {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		margin: 0;
+		padding: 0;
+	}
+	.header-message .logo {
+		font-size: 1.6em;
+		margin-bottom: 0;
+	}
+
+	.header-message .follow-me {
+		margin-top: 0;
+	}
+
+}
+
+/*740ピクセル以上の場合の指定*/
+@media(min-width: 740px) {
+
+	/*	記事全体*/
+	.mycontainer {
+		max-width: 720px;
+
+	}
+
+	.myprofile,
+	.widget {
+		margin-bottom: 50px;
+	}
+
+	/*	各記事の横幅*/
+	.myrelated article {
+		width: 24%;
+		margin-right: calc(2% / 3);
+	}
+
+	/*各記事を左揃えにする*/
+	.myrelated .mypostlist {
+		justify-content: flex-start;
+	}
+
+	/* 	/*末尾以外の記事に余白を入れる*/
+	.myrelated article:not(:last-child) {
+		margin-right: calc(3% / 3);
+	}
+}
